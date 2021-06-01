@@ -17,15 +17,9 @@
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  width: 100%;
+  padding: 0 10px;
   display: flex;
-}
-
-.container--position {
-  align-items: center;
-  justify-content: center;
 }
 
 .container--direction {
@@ -33,11 +27,26 @@
   align-items: center;
 }
 
-.container--padding {
-  flex-direction: column;
-  align-items: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
 }
 
 :root {
@@ -408,15 +417,24 @@
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background/bg_image.jpg);
-  background-size: cover;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background/hero-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 480px 580px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px), screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background/hero-bg-mobile@2x.jpg);
+  }
 }
 
 .hero__title {
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
+  line-height: 42px;
   color: var(--fourth-color);
 }
 
