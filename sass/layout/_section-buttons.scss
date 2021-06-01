@@ -1,0 +1,15 @@
+.buttons {
+    background-color: var(--first-background-color);
+    padding-bottom: 20px;
+    padding-top: 94px;
+}
+.buttons__list {
+    display: flex;
+    justify-content: space-between;
+    width: 553px;
+}
+.buttons__item {
+    padding: 6px 22px;
+    font-weight: 500;
+    line-height: 26px;
+}
