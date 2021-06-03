@@ -53,10 +53,9 @@
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 30px;
-    height: 24px;
 }
 .checkbox__label {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     position: relative;
 }
@@ -161,3 +160,204 @@
     width: 1px !important;
     overflow: hidden;
 }
+@media screen and (min-width: 1200px) {
+    .checkbox__label {
+        font-size: 14px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .modal__form {
+//     display: flex;
+//     flex-direction: column;
+//     padding: 40px;
+// }
+// .modal__title {
+//     color: var(--first-color);
+//     font-weight: 700;
+//     font-size: 20px;
+//     text-align: center;
+//     margin-bottom: 12px;
+// }
+// .modal__label {
+//     color: var(--second-color);
+//     font-weight: 400;
+//     font-size: 12px;
+//     margin-bottom: 4px;
+// }
+// .modal__input {
+//     height: 40px;
+//     width: 100%;
+//     box-sizing: border-box;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: 4px;
+//     padding: 14px 35px;
+//     margin-bottom: 10px;
+//     outline: none;
+//     transition-property: border-color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .modal__textarea {
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     box-sizing: border-box;
+//     border-radius: 4px;
+//     padding: 12px 16px;
+//     height: 120px;
+//     outline: none;
+//     font-size: 12px;
+//     font-weight: 400;
+//     transition-property: border-color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .modal__textarea::placeholder {
+//     font-size: 12px;
+//     font-weight: 400;
+//     color: rgba(117, 117, 117, 0.5);
+// }
+// .modal__statement {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-top: 20px;
+//     margin-bottom: 30px;
+//     height: 24px;
+// }
+// .checkbox__label {
+//     font-size: 14px;
+//     font-weight: 400;
+//     position: relative;
+// }
+// .checkbox__link {
+//     color: var(--third-color);
+// }
+// .modal__submit {
+//     width: 200px;
+//     height: 50px;
+//     border: none;
+//     border-radius: 4px;
+//     padding: 0px;
+//     background-color: var(--third-color);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     font-size: 16px;
+//     font-weight: 700;
+//     color: var(--fourth-color);
+//     margin-left: 12px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin: auto;
+// }
+// .modal__icon1 {
+//     width: 12px;
+//     height: 12px;
+//     position: absolute;
+//     top: 105px;
+//     left: 55px;
+//     fill: var(--first-color);
+//     transition-property: fill;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .modal__icon2 {
+//     width: 13px;
+//     height: 13px;
+//     position: absolute;
+//     top: 173px;
+//     left: 54.27px;
+//     fill: var(--first-color);
+//     transition-property: fill;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .modal__icon3 {
+//     width: 15px;
+//     height: 12px;
+//     position: absolute;
+//     top: 240px;
+//     left: 53.5px;
+//     fill: var(--first-color);
+//     transition-property: fill;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .modal__submit:hover,
+// .modal__submit:focus {
+//     cursor: var(--first-cursor);
+// }
+// .modal__textarea:focus,
+// .modal__input:focus {
+//     border-color: var(--third-color);
+// }
+// .modal__input:focus+ .modal__icon1 {
+//     fill: var(--third-color);
+// }
+// .modal__input:focus+ .modal__icon2 {
+//     fill: var(--third-color);
+// }
+// .modal__input:focus+ .modal__icon3 {
+//     fill: var(--third-color);
+// }
+// .checkbox__label::before {
+//     display: inline-block;
+//     content: "";
+//     width: 16px;
+//     height: 16px;
+//     border: 1px solid #000;
+//     border-radius: 2px;
+//     transition-property: background-color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     position: absolute;
+//     left: -24px;
+//     top: -1px;
+// }
+// .modal__checkbox:checked + .checkbox__label::before {
+//     background-color: var(--third-color);
+//     border: none;
+//     background-image: url(../images/Vector.svg);
+//     background-repeat: no-repeat;
+//     background-position: 50% 50%;
+// }
+// .modal__checkbox--visually-hidden {
+//     position: absolute !important;
+//     clip: rect(1px 1px 1px 1px);
+//     clip: rect(1px, 1px, 1px, 1px);
+//     padding: 0 !important;
+//     border: 0 !important;
+//     height: 1px !important;
+//     width: 1px !important;
+//     overflow: hidden;
+// }
