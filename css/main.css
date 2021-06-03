@@ -860,13 +860,13 @@
 }
 
 .services {
-  background-color: var(--first-background-color);
-  padding-top: 94px;
+  background-color: var(--fourth-background-color);
+  padding-top: 60px;
 }
 
 .services__list {
   display: flex;
-  width: 1170px;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -876,8 +876,10 @@
 }
 
 .services__icon {
-  width: 270px;
+  width: 450px;
   height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
 
 .services__title {
