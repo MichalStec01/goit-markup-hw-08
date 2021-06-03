@@ -100,6 +100,89 @@
   display: none;
 }
 
+.menu__open__button {
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  background-color: var(--fourth-background-color);
+  border: none;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.menu__open__icon {
+  width: 24px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu__open__icon:hover,
+.menu__open__icon:focus {
+  cursor: var(--first-cursor);
+  fill: var(--third-color);
+}
+
+.modal__menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 480px;
+  height: 796px;
+  background-color: var(--fourth-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.menu__close__button {
+  width: 30px;
+  height: 30px;
+  background-color: var(--fourth-color);
+  border: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.menu__close__icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu__close__button:hover,
+.menu__close__button:focus {
+  cursor: var(--first-cursor);
+  fill: var(--third-color);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(0.5) translateY(300px);
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (max-width: 767px) {
   .container {
     display: flex;

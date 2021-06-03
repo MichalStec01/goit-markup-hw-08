@@ -18,6 +18,11 @@
         <section class="header">
             <div class="container container--position">
                 <a class="header__logo" href="index.html"><span>Web</span>Studio</a>
+                <button class="menu__open__button" type="button" data-menu-open>
+                    <svg class="menu__open__icon">
+                        <use href="./images/icons.svg#icon-menu_24px"></use>
+                    </svg>
+                </button>
                 <ul class="header__nav">
                     <li><a class="link link--underline" href="index.html">Agencja</a></li>
                     <li><a class="link" href="portfolio.html">Portfolio</a></li>
@@ -393,6 +398,16 @@
             </form>
         </div>
     </div>
+    <div class="modal__menu is-hidden" data-menu>
+        <div class="menu">
+            <button type="button" class="menu__close__button" data-menu-close>
+                <svg class="menu__close__icon">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
